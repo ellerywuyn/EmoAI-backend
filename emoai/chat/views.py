@@ -28,7 +28,7 @@ def chat_response(request):
         'gpt-4': "gpt-4-1106-preview",  # replace with your actual GPT-4 model
         }
         model_to_use = model_mapping.get(selected_model, "gpt-4-1106-preview")
-        os.environ["OPENAI_API_KEY"] = "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"
+        os.environ["OPENAI_API_KEY"] = "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"
 
         if user_message == '':
            bot_response = f"""
