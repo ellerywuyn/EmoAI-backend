@@ -196,7 +196,8 @@ def generate_virtual_friend_avatar(request):
         custom_prompt = request.data.get('customPrompt')
         dynamic_path = f'user_data/{username}/friend_avatar/{friend_name}/'
         print(dynamic_path)
-        os.environ["OPENAI_API_KEY"] = "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"
+        os.environ["OPENAI_API_KEY"] = "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"
+        # os.environ["OPENAI_API_KEY"] = "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"
         print("hhh")
         client = OpenAI()
         print("xxx")

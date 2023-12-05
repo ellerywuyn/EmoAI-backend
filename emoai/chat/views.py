@@ -24,11 +24,12 @@ def chat_response(request):
         customPrompt = data.get('customPrompt')
         selected_model = data.get('selectedModel')
         model_mapping = {
-        'gpt-3.5': "ft:gpt-3.5-turbo-1106:personal::8RuIR1zs",  # replace with your actual GPT-3.5 model
-        'gpt-4': "gpt-4-1106-preview",  # replace with your actual GPT-4 model
+        'gpt-3.5': "ft:gpt-3.5-turbo-1106:personal::8RuIR1zs", 
+        'gpt-4': "gpt-4-1106-preview"
         }
         model_to_use = model_mapping.get(selected_model, "gpt-4-1106-preview")
-        os.environ["OPENAI_API_KEY"] = "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"
+        os.environ["OPENAI_API_KEY"] = "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"
+        # os.environ["OPENAI_API_KEY"] = "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"
 
         if user_message == '':
            bot_response = f"""
